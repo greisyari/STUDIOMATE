@@ -14,6 +14,7 @@ import Agendar from './componentes/Agendar';
 import Iniciarsesion from './componentes/Iniciarsesion'
 import LoginScreen from  './componentes/LoginScreen'
 import Nosotras from './componentes/Nosotras';
+import Contacto from './componentes/Contacto'
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
       <Route path='/iniciar' element={<Iniciarsesion/>}/>
       <Route path='/mas' element={<LoginScreen/>}/>
       <Route path='/nosotras' element={<Nosotras/>}/>
+      <Route path='/Contacto' element={<Contacto/>}/>
     </Routes>
     </BrowserRouter>
     </>

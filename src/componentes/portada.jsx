@@ -50,19 +50,7 @@ function Portada () {
                         Compañeros de diseño interior. Creamos ambientes minimalistas y acogedores, enfocados en la luz natural y la armonía de tus colores preferidos.
                     </p>
                     {/* CTA con estilo rectangular y colores invertidos */}
-                    <Link
-                        className="
-                            font-semibold py-3 px-8 w-max rounded-lg shadow-xl 
-                            transition duration-300 ease-in-out transform hover:scale-[1.02] hover:shadow-2xl
-                        "
-                        style={{ 
-                            backgroundColor: customColors.primaryLight, // Fondo Beige Claro
-                            color: customColors.accentTerracotta, // Texto Terracota
-                        }}
-                        to="/separación"
-                    >
-                        ¡Nuestro Trabajo!
-                    </Link>
+            
                 </div>
             </section>
         );
@@ -213,8 +201,11 @@ function Portada () {
                                     { text: 'Iniciar sesión', to: '/iniciar' },
                                     { text: 'Registrarse', to: '/registrar' },
                                     { text: 'Portafolio', to: '/portafolio' },
+                                    { text: 'Contacto', to: '/Contacto' },
                                     { text: 'Más', to: '/mas' }
                                 ].map((item, index) => (
+
+
                                     item.href ? (
                                         <a key={index} 
                                            href={item.href} 
